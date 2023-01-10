@@ -1,0 +1,11 @@
+# Add subdir
+vim /home/sandbox/hpc/main/clang-tools-extra/CMakeLists.txt
+
+# Mkdir with CMakeLists.txt and cpp
+mkdir /home/sandbox/hpc/main/clang-tools-extra/ast-play
+
+# Copy content
+cp /home/sandbox/hpc/libtooling/{CMakeLists.txt,my_matcher.cpp} /home/sandbox/hpc/main/clang-tools-extra/ast-play
+
+ninja -j6 ast-play
+
